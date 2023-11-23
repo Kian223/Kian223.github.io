@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+body
+{
+    background: rgb(0, 0, 0);
+    justify-content: center;
+    background-size: cover;
+    animation:  fadeIn 2s ease-out;
+
+}
+
+.header{
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    margin-right: 40px;
+    transition: 2s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(0, 185, 40); /*animasi navbar*/
+}
+
+.logo{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(0, 185, 40);
+}
+/* Navbar udahan */
+
+/* Cv css mulai */
+.container
+{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    max-width: 1075px;
+    min-height: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(211, 68, 68, 0.1);
+}
+.container .left-side
+{
+    position: relative;
+    background: #000000;
+    padding: 40px;
+    width: 600px;
+}
+.profile-text
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(179, 46, 46, 0.2);
+}
+.profile-text .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-text .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-text h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profile-text h2 span
+{
+    font-size: 0.8em;
+    font-style: 300;
+}
+.contact-info
+{
+    padding-top: 40px;
+}
+.title2
+{
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contact-info ul
+{
+    position: relative;
+}
+.contact-info ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contact-info ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #29b329;
+}
+.contact-info ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+.contact-info.education li
+{
+    margin-bottom: 15px;
+}
+.contact-info.education h5
+{
+    color: rgb(241, 141, 141);
+    font-weight: 500;
+}
+.contact-info.education h4
+{
+    color: rgb(252, 248, 248);
+    font-weight: 500;
+}
+.contact-info.education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 300;
+}
+.contact-info.language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background:#00ff6a;
+    display: block;
+    margin-top: 5px;
+}
+.contact-info.language .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #0ce088;
+}
+
+/* box kanan */
+.container .right-side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about
+{
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+
+
+.contact-info li:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+a:link, a:visited {
+    color: rgb(255, 255, 255); /* Atur warna link menjadi hitam */
+    text-decoration: none; /* Hapus dekorasi link (misalnya, garis bawah) */
+}
+
+.title3{
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.title4{
+    color: #003147;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+h2.title2,
+h2.title3{
+    border-bottom: 2px solid #000; /* Warna dan ketebalan garis sesuaikan dengan preferensi Anda */
+    padding-bottom: 10px; /* Atur jarak antara teks dan garis */
+    text-align: center; /* Pusatkan teks */
+}
+
+p
+{
+    color: #333;
+}
+
+.about .box {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.about .box .year {
+    min-width: 150px;
+}
+
+.about .box .year h5 {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-align: right; /* Posisikan nama sekolah ke pojok kanan */
+    flex-grow: 1; /* Membuat nama sekolah sejajar dengan tahun */
+    margin-left: 10px; /* Memberikan sedikit spasi antara tahun dan nama sekolah */
+}
+/* cvc ss udahan */
+
+
+/* Foother */
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: blueviolet;
+    z-index: 1;
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blueviolet;
+    border-image: initial;
+    border-radius: 50%;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.footer {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-social {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.footer-social a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-social a:hover {
+    color: blueviolet;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+

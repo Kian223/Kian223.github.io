@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+body{
+    background: black;
+    color: aliceblue;
+
+}
+
+body {
+    background-image: url(neon\ comp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Untuk mengunci gambar latar belakang */
+    background-position: center;
+    animation:  fadeIn 2s ease-out;
+}
+
+/* Navbar mulai */
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: rgb(175, 174, 174);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    margin-right: 40px;
+    transition: 2s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #00ff40; /*animasi navbar*/
+}
+
+.logo{
+    font-size: 25px;
+    color: #00ff40;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* navbar selesai */
+
+
+/* Tulisan tengah mulai */
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    margin-left: 200px;
+    margin-top: 45px;
+}
+
+.home-content{
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.home-content h1 {
+    font-size: 77px;
+    line-height: 1.2;
+    font: small-caps bold 80px/1 sans-serif;
+    background: transparent;
+    background-color: antiquewhite;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    animation: textShine 5s ease-in-out infinite alternate;
+  
+}
+
+.home-content h3{
+    font-size: 50px;
+    font-weight: 700px;
+    background: transparent;
+    background: linear-gradient(90deg, rgb(76, 187, 51) 0%, rgb(10, 161, 7) 100%);
+    color: transparent;
+    font-weight: bold;
+    -webkit-background-clip:text;
+}
+
+.home-content p{
+    margin: 20px 0 40px;
+    font-size: 20px;
+    font: 1.2rem "Fira Sans", sans-serif;
+}
+/* tulisan tengah udahan */
+
+/* Tombol Ask Me mulai */
+.home-content .btn-box{
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    border-radius: 20px; /* nambah sudut tumpul */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.btn-box {
+    position: relative;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 26px;
+    text-decoration: none; /*hapus garis bawah tulisan "Hire Me" */
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+    color: #310000; /* ganti warna font jadi putih */
+    font-family: 'Times New Roman', Times, serif; /* ganti font */
+    margin-top: 30px;
+}
+
+.btn-box::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(76, 187, 51) 0%, rgb(10, 161, 7) 100%);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box:hover::before{
+    width: 100%;
+}
+/* Tombol Ask Me udahan */
+
+/* 2 Gambar */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-top: 150px;
+    margin-right: 450px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    
+}
+
+.image-container img {
+    margin: 10px; 
+    width: 380px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    transition: transform 0.3s;
+    z-index: 2;
+    display: flex;
+}
+
+.image-container img:hover {
+    transform: scale(1.1); 
+}
+
+
+.text-container {
+    flex: 1; 
+}
+
+.btn-box {
+    margin-left: 10%; 
+}
+
+.image-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-top: 350px;
+    margin-right: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+
+.image-container2 img {
+    margin: 10px;
+    width: 380px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    transition: transform 0.3s; 
+    z-index: 1;
+}   
+
+.image-container2 img:hover {
+    transform: scale(1.1); 
+}
+
+.text-container {
+    flex: 1; /* Allow text to take up available space on the left */
+}
+
+.btn-box {
+    margin-left: 0%;
+}
+/* 2 Gambar selesai */
+
+
+/* foother mulai */
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: blueviolet;
+    z-index: 1;
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blueviolet;
+    border-image: initial;
+    border-radius: 50%;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.footer {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-social {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.footer-social a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-social a:hover {
+    color: blueviolet;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+
+/* foother selesai */

@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+body{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    animation:  fadeIn 1s ease-out;
+    background-image: url('awanan\ 2.jpg');
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.header{
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: transparent;
+
+}
+
+.navbar a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-left: 35px;
+    margin-right: 40px;
+    transition: 2s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(0, 185, 40); /*animasi navbar*/
+}
+
+.logo{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(0, 185, 40);
+}
+/* Navbar udahan */
+
+/* Gambar */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 1903px; /* Lebar gambar */
+    height: 400px; /* Tinggi gambar */
+    text-align: end;
+    margin-top: 30px;
+    margin-right: 0px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out; /* Ubah durasi dan jenis animasi sesuai kebutuhan Anda */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#image2 {
+    opacity: 0;
+}
+
+#container:hover #image1 {
+    opacity: 0;
+}
+
+#container:hover #image2 {
+    opacity: 1;
+}
+
+/* done */
+
+/* Card Project */
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 12px #000;
+    transform: preserve-3d;
+    perspective: 2000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+}
+
+.cover {
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Menambahkan efek transisi agar animasi lebih halus */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 12px #000;
+}
+
+.book:hover .cover {
+    transform: translateY(10px); /* Mengubah nilai ke positif untuk animasi ke bawah */
+    opacity: 0; /* Mengubah opacity menjadi 0 saat animasi berlangsung */
+}
+
+.description-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.inner {
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* Vid project */
+.iframe-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px; /* Tambahkan margin agar ada jarak di atas video */
+    margin-left: 300px;
+    margin-bottom: 70px;
+}
+
+.iframe1,
+.iframe2 {
+    flex: 1; /* Memastikan video memiliki lebar yang sama dan memenuhi container */
+    z-index: 3; /* Nilai z-index yang lebih tinggi */
+}
+
+/* Adjust the margin-left for spacing */
+.iframe2 {
+    margin-left: 0px; /* Sesuaikan dengan jumlah margin yang diinginkan */
+}
+
+
+/*Done  */
+
+/* foother */
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    color: blueviolet;
+    z-index: 1;
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blueviolet;
+    border-image: initial;
+    border-radius: 50%;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.footer {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-social {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.footer-social a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-social a:hover {
+    color: blueviolet;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+

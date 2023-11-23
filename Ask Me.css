@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+body {
+    background: url(digital-digital-art-artwork-illustration-environment-Video-Game-Art-2164999-wallhere.com.jpg);
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    position: relative;
+    animation:  fadeIn 1s ease-out;
+}
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.navbar a {
+    font-size: 18px;
+    color: #00ff40;;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    margin-right: 400px;
+    transition: 0.5s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00ff40;
+}
+
+.logo {
+    font-size: 25px;
+    color: #00ff40;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* form mulai */
+* {
+  box-sizing: border-box;
+}
+
+.h1 {
+  font-size: 30px;
+  margin-bottom: 100px;
+  margin-top:1px;
+  color: #000000; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.container {
+  display: flex;
+  height: 600px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 160px;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  animation-name: left;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+  width: 50%;
+  background-color: #fff;
+  text-align: center; /* Tengahkan teks pada sisi kiri */
+}
+
+.right {
+  flex: 1;
+  background-color: black;
+  transition: 1s;
+  background-image: url(Nigth\ city.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; /* Tengahkan formulir */
+  padding: 20px;
+}
+
+.form p {
+  text-align: center; /* Tengahkan teks pada elemen paragraf */
+  margin: 0;
+}
+
+.form a {
+  color: #000;
+  font-size: 14px;
+}
+
+.form-field {
+  height: 46px;
+  padding: 0 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Rubik', sans-serif;
+  outline: 0;
+  transition: 0.2s;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.form-field:focus {
+  border-color: #0f7ef1;
+}
+
+
+
+
+
+  .submit {
+    background: linear-gradient(to right, #de48b5 0%, #0097ff 100%);
+    border-radius: 8px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 30px;
+    outline: 0;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+.submit::before{
+  content:'';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 0;
+    height: 100%;
+    background: #00ff40;
+    z-index: -1;
+    transition: .5s;
+    transform-origin: left;
+}
+
+.submit:hover::before{
+  width: 100%;
+  transform: scalex(1);
+  transform-origin: left;
+}
+ 
+
+/* form udahan */
+
+
+
+/* foother */
+.home-sci a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: blueviolet;
+  z-index: 1;
+  background: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: blueviolet;
+  border-image: initial;
+  border-radius: 50%;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-social {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.footer-social a {
+  color: aliceblue;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-social a:hover {
+  color: blueviolet;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+
+/* foother selesai */
